@@ -1,16 +1,42 @@
 <!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+ ! Excerpted from "Web Development Recipes",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/wbdev for more book information.
 -->
 <html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>aTERAZ PUSHEM</div>
-    </body>
+  <head>
+    <title>Przyciski CSS3</title>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/mustache.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link href="css/st.css" rel="stylesheet" type="text/css"/>
+  <meta charset="utf-8">
+  </head>
+  <body>
+    <p>
+      <input type="button" value="Przycisk!" class="button" style="line-height:2em">
+      <input type="button" value="Przycisk!" class="button" style="line-height:2em">
+      <input type="button" value="Przycisk!" class="button" style="line-height:2em">
+      <input type="button" value="Przycisk!" class="button" style="line-height:2em">
+      <input type="button" value="Przycisk!" class="button" style="line-height:2em">
+      <input type="button" value="Przycisk!" class="button" style="line-height:2em">
+    </p>
+    
+    <script type="text/template" id="button-template">
+        {{#button}}
+        <div class="buttons {{ color }}">
+        <input type="button" value={{ value }} class={{ class }} id={{ id }}&nbsp;{{ class }}>
+        <input type="button" value={{ value }} class={{ class }} id={{ id }}&nbsp;{{ class }}>
+        <input type="button" value={{ value }} class={{ class }} id={{ id }}&nbsp;{{ class }}>
+        <input type="button" value={{ value }} class={{ class }} id={{ id }}&nbsp;{{ class }}>
+        <input type="button" value={{ value }} class={{ class }} id={{ id }}&nbsp;{{ class }}>
+        </div>
+      {{/button}}
+        </script>
+    <script src="js/js.js" type="text/javascript"></script>
+  </body>
 </html>
