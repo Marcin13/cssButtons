@@ -5,7 +5,7 @@
  */
 var data = {"button": [
         {
-         "value": "Przycisk!",
+         "value": "Przycisk!1",
          "class": "button",
          "id": "button",
          "color": "red"
@@ -15,6 +15,12 @@ var data = {"button": [
          "class": "button",
          "id": "button",
          "color": "blue"
+         },
+           {
+         "value": "Przycisk!3",
+         "class": "button",
+         "id": "button",
+         "color": "black"
          }
 
     ]};
